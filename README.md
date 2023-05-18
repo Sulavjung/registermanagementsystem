@@ -1,3 +1,5 @@
+![Sample](./src/assets/SCR-20230518-end.png)
+
 # Register Management System
 
 The Register Management System is a web-based application designed to streamline and digitize the register management processes within an organization. It provides a centralized platform for efficient data entry, search, and retrieval of various types of registers, including attendance logs, visitor records, inventory tracking, and more.
@@ -12,6 +14,8 @@ The Register Management System is a web-based application designed to streamline
 - Role-based access control to ensure data privacy and security.
 - Integration with external systems for seamless data exchange.
 - Scalable architecture to accommodate future expansion and enhancements.
+
+![Sample](./src/assets/SCR-20230518-eo3.png)
 
 ## Register Management System Tech Stack
 
