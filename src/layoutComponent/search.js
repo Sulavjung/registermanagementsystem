@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const Search = () => {
+const Search = (props) => {
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [showList, setShowList] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/products").then((response) => {
+    axios.get("http://localhost:3006/products").then((response) => {
       setProducts(response.data);
     });
   }, []);

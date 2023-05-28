@@ -12,7 +12,7 @@ function Home() {
       <Helmet>
         <meta property="og:image" content={img} />
       </Helmet>
-      <div className="h-screen">
+      <div className="h-screen overflow-hidden">
         <Nav />
         <MainScreenDisp />
       </div>

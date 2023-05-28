@@ -14,7 +14,7 @@ const AllProducts = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await axios.get(`http://localhost:3000/products`, {
+        const response = await axios.get(`http://localhost:3006/products`, {
           headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",

@@ -20,7 +20,7 @@ const UpdateProduct = (props) => {
   };
   useEffect(() => {
     async function fetchCategories() {
-      const response = await fetch("http://localhost:3000/categories");
+      const response = await fetch("http://localhost:3006/categories");
       const data = await response.json();
       const uniqueCategories = [...new Set(data)];
       setCategories(uniqueCategories);
@@ -65,7 +65,7 @@ const UpdateProduct = (props) => {
         taxPercentage,
       };
 
-      fetch(`http://localhost:3000/products/${props.product.id}`, {
+      fetch(`http://localhost:3006/products/${props.product.id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

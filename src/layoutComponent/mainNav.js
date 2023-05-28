@@ -3,7 +3,7 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import Search from "../layoutComponent/search";
 
-function Nav() {
+function Nav(props) {
   return (
     <>
       <div class="sticky top-0 z-10 bg-white">
@@ -81,7 +81,7 @@ function Nav() {
                   </svg>
                 </button>
               </div> */}
-              <Search />
+              <Search handleAdd={props.handleAdd} />
             </div>
           </nav>
 

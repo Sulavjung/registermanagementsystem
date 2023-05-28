@@ -18,7 +18,7 @@ const AddNew = (props) => {
   };
   useEffect(() => {
     async function fetchCategories() {
-      const response = await fetch("http://localhost:3000/categories");
+      const response = await fetch("http://localhost:3006/categories");
       const data = await response.json();
       const uniqueCategories = [...new Set(data)];
       setCategories(uniqueCategories);
@@ -63,7 +63,7 @@ const AddNew = (props) => {
         taxPercentage,
       };
 
-      fetch("http://localhost:3000/submit-data", {
+      fetch("http://localhost:3006/submit-data", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,1 +1,23 @@
+.pointer-effect {
+  transform: translateY(-2px);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
 
+.pointer-effect:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pointer-effect:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* body {
+  background-image: url("./assets/MacBook\ Pro\ 16_\ -\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.selectedButton {
+  background-color: blue;
+}
