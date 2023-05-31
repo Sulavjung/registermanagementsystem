@@ -7,7 +7,7 @@ const Search = (props) => {
   const [showList, setShowList] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:3006/products").then((response) => {
+    axios.get(`${process.env.REACT_APP_DB_HOST}products`).then((response) => {
       setProducts(response.data);
     });
   }, []);

@@ -4,6 +4,7 @@ import axios from "axios";
 function Products(props) {
   const [products, setProducts] = useState([]);
   const [quantity, setQuantity] = useState(1);
+  const url = process.env.REACT_APP_DB_HOST;
 
   const handleButtonClick = (selectedQuantity) => {
     setQuantity(selectedQuantity);
@@ -27,7 +28,7 @@ function Products(props) {
     async function fetchProducts() {
       try {
         const response = await axios.get(
-          `http://localhost:3006/products/category/${props.category}`,
+          `${process.env.REACT_APP_DB_HOST}products/category/${props.category}`,
           {
             headers: {
               "Access-Control-Allow-Origin": "*",
@@ -45,6 +46,8 @@ function Products(props) {
 
     fetchProducts();
   }, [props.category]);
+
+  console.log(url);
 
   return (
     <>

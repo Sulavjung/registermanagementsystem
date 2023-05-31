@@ -14,13 +14,17 @@ const AllProducts = () => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await axios.get(`http://localhost:3006/products`, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await axios.get(
+          `${process.env.REACT_APP_DB_HOST}products`,
+          {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods":
+                "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+              "Content-Type": "application/json",
+            },
+          }
+        );
         setProducts(response.data);
         setSortedProducts(response.data);
       } catch (error) {

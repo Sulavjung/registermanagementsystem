@@ -32,7 +32,9 @@ function Categories(props) {
 
   useEffect(() => {
     async function fetchCategories() {
-      const response = await fetch("http://localhost:3006/categories");
+      const response = await fetch(
+        `${process.env.REACT_APP_DB_HOST}categories`
+      );
       const data = await response.json();
       const uniqueCategories = [...new Set(data)];
       setCategories(uniqueCategories);
