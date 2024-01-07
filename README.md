@@ -86,9 +86,6 @@ We welcome contributions to enhance the Register Management System. To contribut
 
 We appreciate your contributions and will review them as soon as possible. Together, we can make the Register Management System even better!
 
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Acknowledgements
 
